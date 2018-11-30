@@ -13,3 +13,5 @@ Bundler.require
 
 
 require_relative "../artist.rb"
+
+DB = {:conn => SQLite3::Database.new("db/artists.db")}

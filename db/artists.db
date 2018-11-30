@@ -1,0 +1,1 @@
+require_relative '..migrate/01_create_artists.rb'
