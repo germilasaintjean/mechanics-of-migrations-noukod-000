@@ -1,5 +1,3 @@
-
-
 class CreateArtists <  ActiveRecord::Migration
   def up
    end
@@ -16,3 +14,4 @@ class CreateArtists <  ActiveRecord::Migration
    end
   end
 end
+ >

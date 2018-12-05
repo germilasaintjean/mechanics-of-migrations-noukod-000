@@ -19,4 +19,16 @@ ActiveRecord::Base.establish_connection(
 
 require_relative "../artist.rb"
 
+sql = <<-SQL
+  CREATE TABLE IF NOT EXISTS artists (
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+  genre TEXT,
+  age INTEGER,
+  hometown TEXT
+  )
+SQL
+
+ActiveRecord::Base.connection.execute(sql)
+
 DB = {:conn => SQLite3::Database.new("db/artists.db")}
